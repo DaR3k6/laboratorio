@@ -1,18 +1,16 @@
-let ciudad = document.getElementById("ciudad").value;
-let silla = document.getElementById("silla").value;
-
-let pesoMaletas = document.getElementById("pesoMaletas").value;
-let pasajeros = document.getElementById("pasajeros").value;
-let resultado = document.getElementById("capaMostrar");
-
 function liquidar() {
-  resultado.innerHTML = "Valor del tiquete";
+  let ciudad = document.getElementById("ciudad").value;
+  let silla = document.getElementById("silla").value;
+
+  let pesoMaletas = document.getElementById("pesoMaletas").value;
+  let pasajeros = document.getElementById("pasajeros").value;
+  let resultado = document.getElementById("capaMostrar");
   //Barranquilla
   if (ciudad == 0 && silla == 0) {
     let adicional = 0;
     let tiquetes = 150000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes;
     return (resultado.innerHTML =
@@ -29,7 +27,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 150000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 20000;
     return (resultado.innerHTML =
@@ -49,7 +47,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 150000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 40000;
     return (resultado.innerHTML =
@@ -71,7 +69,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 100000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes;
     return (resultado.innerHTML =
@@ -88,7 +86,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 100000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 20000;
     return (resultado.innerHTML =
@@ -108,7 +106,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 100000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 40000;
     return (resultado.innerHTML =
@@ -130,7 +128,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 90000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes;
     return (resultado.innerHTML =
@@ -147,7 +145,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 90000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 20000;
     return (resultado.innerHTML =
@@ -167,7 +165,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 90000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 40000;
     return (resultado.innerHTML =
@@ -189,7 +187,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 170000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes;
     return (resultado.innerHTML =
@@ -206,7 +204,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 170000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 20000;
     return (resultado.innerHTML =
@@ -226,7 +224,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 170000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 40000;
     return (resultado.innerHTML =
@@ -248,7 +246,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 120000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes;
     return (resultado.innerHTML =
@@ -265,7 +263,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 120000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 20000;
     return (resultado.innerHTML =
@@ -285,7 +283,7 @@ function liquidar() {
     let adicional = 0;
     let tiquetes = 120000 * pasajeros;
     if (pesoMaletas > 50) {
-      adicional = (pesoMaletas - 50) * 15000;
+      adicional = (pesoMaletas - 50) * 15000 * pasajeros;
     }
     tp = adicional + tiquetes + 40000;
     return (resultado.innerHTML =
